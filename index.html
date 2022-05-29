@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Jokes</title>
+  </head>
+  <body>
+    <header>
+        <div class="weather">
+            <h3>Temperature: </h3>
+            
+         </div>
+    </header>
+
+     <div class="container">
+        <div class="jokeCard">
+            <h1>Ready to Laugh? 😆</h1>
+                <div id="jokeText"></div>
+                    <div class="emojiButtons">
+                        <button class = "buttonHappy"  onclick= "valorar(3)"> 	&#128516; </button>
+                        <button class = "buttonNeutral"  onclick= "valorar(2)"> 	&#128528; </button>
+                        <button class = "buttonSad"  onclick= "valorar(1)"> 	&#128533; </button>
+                    </div>
+                <button class = "buttonNext"  onclick= "getJoke()" id="getJoke"> Next </button>
+        </div>
+     </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
