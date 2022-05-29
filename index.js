@@ -60,7 +60,39 @@ getWeather().then((temp) => {
     htmlTemp.innerHTML += `${temp}º`
   
 
-})
+});
+
+
+//Exercise 5//
+/*
+const apiChucknorris = 'https://api.chucknorris.io/jokes/random';
+async function getJoke() {
+    const chance = Math.floor(Math.random() * 2);
+    const jokeChances = [
+        {
+            id: 'default',
+            url: apiUrl
+        },
+        {
+            id: 'chucknorris',
+            url: apiChucknorris
+        }
+    ];
+
+    const api = jokeChances[chance];
+
+    const response = await fetch(api.url, {
+       headers: {
+        Accept: 'application/json' 
+       },
+    });
+       
+    const jokeData = await response.json();
+
+    jokeText.innerHTML = api.id == 'default' ? jokeData.joke : jokeData.value;
+}
+*/
+
 
 
 
